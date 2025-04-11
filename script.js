@@ -124,11 +124,11 @@ try {
   
   // Map of era textures
   const eraTextures = {
-    modern: 'textures/earth_night.jpg',
-    ancient: 'textures/earth old.jpg',
+    modern: 'earth_night.jpg',
+    ancient: 'earth old.jpg',
     prehistoric: 'dinoera.jpg',
-    dinosaurs: 'textures/clouds.png',
-    formation: 'textures/eartrh_bump.jpg'
+    dinosaurs: 'clouds.png',
+    formation: 'eartrh_bump.jpg'
   };
   
   // Load initial texture
