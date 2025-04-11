@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earth Timeline</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="image.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <div class="earth-display">
+      <canvas id="earthCanvas"></canvas>
+      <div class="era-info-panel">
+        <h3>Era Information</h3>
+        <div class="era-info-content">
+          <div class="era-info" data-era="modern">
+            <h4>🗽 Modern Era</h4>
+            <p>From 1945 to present day</p>
+          </div>
+          <div class="era-info" data-era="ancient">
+            <h4>🐒 Ancient Civilizations</h4>
+            <p>From 3000 BCE to 500 CE</p>
+          </div>
+          <div class="era-info" data-era="prehistoric">
+            <h4>🌏 Prehistoric Life</h4>
+            <p>From 2.5 million years ago to 3000 BCE</p>
+          </div>
+          <div class="era-info" data-era="dinosaurs">
+            <h4>🦖 Dinosaurs</h4>
+            <p>From 230 to 65 million years ago</p>
+          </div>
+          <div class="era-info" data-era="formation">
+            <h4>🧬 Formation of Earth</h4>
+            <p>From 4.5 billion years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-section">
+      <label for="eraSelector">Select Era:</label>
+      <select id="eraSelector">
+        <option value="modern" selected>🗽Modern Era</option>
+        <option value="ancient">🐒Ancient Civilizations</option>
+        <option value="prehistoric">🌏Prehistoric Life</option>
+        <option value="dinosaurs">🦖Dinosaurs</option>
+        <option value="formation">🧬Formation of Earth</option>
+      </select>
+    </div>
+
+    <p class="instructions">Use the dropdown to select an era.</p>
+  </div>
+
+
+
+  <!-- Include Three.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
+  <!-- Include your custom script -->
+  <script src="script.js"></script>
+</body>
+<footer>
+  &copy; <span id="year"></span> Earth Timeline Project. All rights reserved.
+</footer>
+</html>
